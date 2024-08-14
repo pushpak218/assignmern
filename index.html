@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Pricing</title>
+    <style>
+        /* Reset and Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #a5b4fc;
+            --background-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #22d3ee;
+            --code-background: #1e293b;
+            --section-background: #1e293b;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main Styling */
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 0 1rem;
+            }
+        }
+
+        /* Section Styling */
+        section {
+            background-color: var(--section-background);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Heading Styling */
+        h2, h3, h4 {
+            margin-top: 2rem;
+            color: var(--secondary-color);
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 1rem;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+            color: #ffffff;
+        }
+
+        /* Hover Effect for Table Rows */
+        tbody tr:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            table, th, td {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>API Pricing</h2>
+
+            <p>
+                Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>API</th>
+                        <th>Model</th>
+                        <th>Price per 1K tokens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OpenAI</td>
+                        <td>GPT-3.5</td>
+                        <td>$0.005</td>
+                    </tr>
+                    <tr>
+                        <td>OpenAI</td>
+                        <td>GPT-4</td>
+                        <td>$0.03</td>
+                    </tr>
+                    <tr>
+                        <td>Together AI</td>
+                        <td>Llama-2-70b</td>
+                        <td>$0.0008</td>
+                    </tr>
+                    <tr>
+                        <td>Together AI</td>
+                        <td>Llama-2-13b</td>
+                        <td>$0.0006</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Token Estimation</h3>
+
+            <p>
+                On average, 1 token is approximately 4 characters or 0.75 words. For precise pricing, we recommend using our token calculator tool.
+            </p>
+
+            <h3>Billing</h3>
+
+            <p>
+                You will only be charged for the tokens used in generating the book. The API tracks token usage and bills accordingly. Detailed usage reports are available in your account dashboard.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
